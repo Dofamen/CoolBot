@@ -2,6 +2,7 @@ import discord
 import os
 from replit import db
 import random
+from keep_alive import keep_alive
 
 token = os.environ['TOKEN']
 client = discord.Client()
@@ -40,5 +41,5 @@ async def on_message(message):
     await message.channel.send(m)
 
 
-
+keep_alive()
 client.run(token)

@@ -8,7 +8,7 @@ client = discord.Client()
 
 def learn(message):
   if 'words' not in db.keys():
-    db['words'] = ['nod jma3 karak a wald l9a7ba']
+    db['words'] = ['Hello']
     return db['words']
   else:
     words = db['words']
